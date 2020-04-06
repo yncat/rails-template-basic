@@ -40,10 +40,6 @@ config/database.yml を、すでによしなに設定済みなので、RailsがD
 
 変えないと、複数のアプリを作ったりしたときにDBが競合してしまうので、必ず変えましょう。
 
-module Basic
-module Basic
-module Basic
-module Basic
 config/application.rb の、 module Basic と書いてあるところを、 module 作りたいアプリの名前 に書き換えればいいらしいです。
 ## rubyとnodeを入れる
 
