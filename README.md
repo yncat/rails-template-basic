@@ -60,7 +60,7 @@ $ gem install bundler
 
 と
 
-$ npm install yarn
+$ npm install -g yarn
 
 をします。
 
