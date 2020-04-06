@@ -36,6 +36,15 @@ export RAILS_DATABASE_PASSWORD=さっきのパスワード
 
 config/database.yml を、すでによしなに設定済みなので、RailsがDBを見に行くときに、上記の環境変数名を自動で読みに行くようになっています。
 
+## アプリ名を変える
+
+変えないと、複数のアプリを作ったりしたときにDBが競合してしまうので、必ず変えましょう。
+
+module Basic
+module Basic
+module Basic
+module Basic
+config/application.rb の、 module Basic と書いてあるところを、 module 作りたいアプリの名前 に書き換えればいいらしいです。
 ## rubyとnodeを入れる
 
 このリポジトリのフォルダに入った状態で、
@@ -88,4 +97,4 @@ $ bundle ex rails s -b 0.0.0.0
 
 あとは、がんがん作ればいいだけですね！
 
-ちなみに、このテンプレートから複数のアプリを作る場合、同一マシン上であれば、かなりの作業をスキップできます。 bundle install と rails webpacker:install と rake db:create だけやればよいです。
+ちなみに、このテンプレートから複数のアプリを作る場合、同一マシン上であれば、かなりの作業をスキップできます。アプリ名を設定し、 bundle install と rails webpacker:install と rake db:create だけやればよいです。
